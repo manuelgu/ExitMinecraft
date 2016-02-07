@@ -1,0 +1,8 @@
+name: ExitMinecraft
+author: manuelgu
+version: 1.0
+main: eu.manuelgu.exitminecraft.ExitMinecraft
+description: Because Linux is everywhere!
+
+commands:
+  exit:
