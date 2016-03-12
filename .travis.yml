@@ -4,4 +4,4 @@ sudo: false
 
 script: mvn clean install
 
-after_success: "curl -F \"txt=$txt\" https://manuelgu.eu/webdev/embuilds/index.php"
+after_success: "curl -F \"txt=$TRAVIS_BUILD_NUMBER\" https://manuelgu.eu/webdev/embuilds/index.php"
