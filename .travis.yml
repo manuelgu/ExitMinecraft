@@ -1,7 +1,10 @@
 language: java
 
-sudo: false
+jdk:
+- oraclejdk8
 
-script: mvn clean install
+cache:
+  directories:
+    - $HOME/.m2
 
-after_success: "curl -F \"txt=$TRAVIS_BUILD_NUMBER\" https://manuelgu.eu/webdev/embuilds/index.php"
+# after_success: "curl -F \"txt=$TRAVIS_BUILD_NUMBER\" https://manuelgu.eu/webdev/embuilds/index.php"
